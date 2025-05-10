@@ -36,4 +36,4 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/hyprland-scss-mods ~/.config/ags/scss
+   git clone https://github.com/theawesomeyopro1/dot-files-customization ~/.config/ags/scss
