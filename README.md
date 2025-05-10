@@ -25,9 +25,11 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 ---
 
 ## 📸 Preview
-
+**Apps**
 ![screenshot](images/apps.png)
+**Overview**
 ![screenshot](images/overview.png)
+**Sidebars**
 ![screenshot](images/everything_else.png)
 
 ## 🛠️ Installation
