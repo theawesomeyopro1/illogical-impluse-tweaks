@@ -26,9 +26,9 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 
 ## 📸 Preview
 
-> _Coming soon_ – Screenshots or a short demo gif of your setup with the SCSS tweaks in action.
-
----
+![screenshot](images/apps.png)
+![screenshot](images/overview.png)
+![screenshot](images/everything_else.png)
 
 ## 🛠️ Installation
 
