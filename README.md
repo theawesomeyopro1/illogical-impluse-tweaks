@@ -37,3 +37,6 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 1. Clone this repo:
    ```bash
    git clone https://github.com/theawesomeyopro1/dot-files-customization ~/.config/ags/scss
+2. Refresh AGSv1 bar:
+   ```bash
+   pkill agsv1 && agsv1
