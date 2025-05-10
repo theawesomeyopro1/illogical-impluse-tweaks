@@ -1,0 +1,17 @@
+// Notifications
+
+$cyan-border: 0.068rem solid #00ffff; // cyan border
+
+// Combined class for all elements with cyan border
+.border-cyan {
+    .notif-low,
+    .notif-normal,
+    .notif-critical,
+    .popup-notif-low,
+    .popup-notif-normal,
+    .popup-notif-critical,
+    .notif-expand-btn,
+    .notif-listaction-btn-enabled {
+        border: $cyan-border;
+    }
+}

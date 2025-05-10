@@ -1,0 +1,13 @@
+//// Bar border
+
+// Bar group (ram, media, desktop, time & date, utilities, charge)
+.bar-group {
+    background-color: $layer1;
+    border: 2px solid cyan; // Add this line
+}
+
+// entire bar (uncomment code)
+
+//.bar-bg {
+//    border: 2px solid cyan;
+//  }

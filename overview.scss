@@ -1,0 +1,71 @@
+/// overview
+
+.overview-search-box {
+    @include element_decel;
+    @include large-rounding;
+    @include elevation-border;
+    @include elevation2;
+    min-width: 13.636rem;
+    min-height: 3.409rem;
+    padding: 0rem 1.364rem;
+    padding-right: 2.864rem;
+    background-color: $background;
+    color: $onBackground;
+    border: 0.068rem solid cyan;
+
+    selection {
+        background-color: $secondary;
+        color: $onSecondary;
+    }
+
+    caret-color: transparent;
+}
+
+
+.overview-search-box-extended {
+    min-width: 25.909rem;
+    caret-color: $onSecondaryContainer;
+    border: 0.068rem solid cyan;
+}
+
+.overview-search-results {
+    @include large-rounding;
+    @include elevation-border;
+    @include elevation2;
+    min-width: 28.773rem;
+    padding: 0.682rem;
+    background-color: $layer0;
+    color: $onLayer0;
+    border: 0.068rem solid cyan;
+}
+
+
+.overview-search-result-btn {
+    @include normal-rounding;
+    padding: 0.341rem;
+    min-width: 2.386rem;
+    min-height: 2.386rem;
+
+    caret-color: transparent;
+
+    border: 0.068rem solid transparent;
+    box-shadow: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, backdrop-filter 0.3s ease;
+
+    @keyframes glow {
+        0% { box-shadow: 0 0 0.2rem cyan; }
+        50% { box-shadow: 0 0 0.7rem cyan; }
+        100% { box-shadow: 0 0 0.2rem cyan; }
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgba(180, 220, 255, 0.1); /* icy transparent look */
+        border: 0.068rem solid cyan;
+        box-shadow: 0 0 0.5rem cyan;
+    }
+}
+
+.overview-search-result-btn:hover {
+    animation: glow 1s infinite;
+}

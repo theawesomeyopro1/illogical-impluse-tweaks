@@ -1,0 +1,22 @@
+/// sidebars
+.sidebar-right {
+    @include menu_decel;
+    @include elevation-border;
+    @include elevation2;
+    border-radius: $rounding_large - $elevation_margin + 0.068rem;
+    min-width: 27.818rem;
+    background-color: $background;
+    padding: 1.023rem;
+    border: 2px solid cyan;
+}
+
+.sidebar-left {
+    @include menu_decel;
+    @include elevation-border;
+    @include elevation2;
+    border-radius: $rounding_large - $elevation_margin + 0.068rem;
+    min-width: 27.818rem;
+    background-color: $background;
+    padding: 1.023rem;
+    border: 2px solid cyan;
+}
