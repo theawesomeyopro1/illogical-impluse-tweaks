@@ -34,9 +34,4 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 
 ## 🛠️ Installation
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/theawesomeyopro1/dot-files-customization ~/.config/ags/scss
-2. Refresh AGSv1 bar:
-   ```bash
-   pkill agsv1 && agsv1
+For now, manually copy and paste all the scss code into all the matching files in `~/.config/ags/scss/`, for some files like notifications.scss and etc, you will have to replace the code instead of adding it.
