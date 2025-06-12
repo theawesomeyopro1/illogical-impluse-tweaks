@@ -55,6 +55,11 @@ You can also update only specific parts:
 ```bash
 ./edit-borders.sh -hex "#0aa4e5" -part bar -part notifications
 ```
+Opening the help menu
+
+```bash
+./edit-borders.sh --help
+```
 
 ### Supported parts:
 ```
