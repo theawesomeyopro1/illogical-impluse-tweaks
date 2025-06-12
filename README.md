@@ -1,4 +1,3 @@
-cat README.md 
 # ✨ Hyprland SCSS Tweaks
 
 A personal collection of SCSS modifications built on top of [end-4's Hyprland dotfiles](https://github.com/end-4/dots-hyprland), aiming to bring a fresh, aesthetic, and dynamic touch to the Hyprland experience.
