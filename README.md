@@ -34,7 +34,7 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 
 ## 🛠️ Installation
 
-For now, manually copy and paste all the scss code into all the matching files in `~/.config/ags/scss/`, for some files like notifications.scss and etc, you will have to replace the code instead of adding it.
+Use the Border-editing script.
 
 ---
 
