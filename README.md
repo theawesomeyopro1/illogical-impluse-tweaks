@@ -25,13 +25,43 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 ---
 
 ## 📸 Preview
-**Apps**
+**Apps**  
 ![screenshot](images/apps.png)
-**Overview**
+
+**Overview**  
 ![screenshot](images/overview.png)
-**Sidebars**
+
+**Sidebars**  
 ![screenshot](images/sidebars.png)
+
+---
 
 ## 🛠️ Installation
 
-For now, manually copy and paste all the scss code into all the matching files in `~/.config/ags/scss/`, for some files like notifications.scss and etc, you will have to replace the code instead of adding it.
+For now, manually copy and paste all the SCSS code into all the matching files in `~/.config/ags/scss/`. For some files like `_notifications.scss`, you may need to **replace** the existing code entirely.
+
+---
+
+## 🔧 Border Color Switcher – `edit-borders.sh`
+
+This repo includes a script called `edit-borders.sh` which allows you to **change all AGS + Hyprland border colors** with a single command.
+
+### 📌 Features:
+- Changes `border` and `box-shadow` colors in AGS SCSS files
+- Updates Hyprland plugin colors (e.g. `col.border_1`, `col.border_2`)
+- Can toggle between colors or set a specific color
+- Supports **component-specific editing** (bar, overview, notifications, sidebars, cheatsheet)
+
+### ✅ Usage:
+
+# Change all components to a specific color
+./edit-borders.sh -hex "#ff00ff"
+
+# Toggle between the default cyan and black
+./edit-borders.sh
+
+# Update only the bar borders
+./edit-borders.sh -hex "#0aa4e5" -part bar
+
+# Update bar and notifications
+./edit-borders.sh -hex "#00ffff" -part bar -part notifications
