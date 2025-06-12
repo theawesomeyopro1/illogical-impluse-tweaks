@@ -1,3 +1,4 @@
+cat README.md 
 # ✨ Hyprland SCSS Tweaks
 
 A personal collection of SCSS modifications built on top of [end-4's Hyprland dotfiles](https://github.com/end-4/dots-hyprland), aiming to bring a fresh, aesthetic, and dynamic touch to the Hyprland experience.
@@ -25,43 +26,49 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 ---
 
 ## 📸 Preview
-**Apps**  
+**Apps**
 ![screenshot](images/apps.png)
-
-**Overview**  
+**Overview**
 ![screenshot](images/overview.png)
-
-**Sidebars**  
+**Sidebars**
 ![screenshot](images/sidebars.png)
-
----
 
 ## 🛠️ Installation
 
-For now, manually copy and paste all the SCSS code into all the matching files in `~/.config/ags/scss/`. For some files like `_notifications.scss`, you may need to **replace** the existing code entirely.
+For now, manually copy and paste all the scss code into all the matching files in `~/.config/ags/scss/`, for some files like notifications.scss and etc, you will have to replace the code instead of adding it.
 
 ---
 
-## 🔧 Border Color Switcher – `edit-borders.sh`
+## 🔧 Border Editing Script
 
-This repo includes a script called `edit-borders.sh` which allows you to **change all AGS + Hyprland border colors** with a single command.
+A utility script is included: `edit-borders.sh`
 
-### 📌 Features:
-- Changes `border` and `box-shadow` colors in AGS SCSS files
-- Updates Hyprland plugin colors (e.g. `col.border_1`, `col.border_2`)
-- Can toggle between colors or set a specific color
-- Supports **component-specific editing** (bar, overview, notifications, sidebars, cheatsheet)
+It allows you to update the colors of all border/glow styles across AGS, Hyprland, and Hyprtrails with one command.
 
-### ✅ Usage:
+### Usage
 
-# Change all components to a specific color
+```bash
 ./edit-borders.sh -hex "#ff00ff"
+```
 
-# Toggle between the default cyan and black
-./edit-borders.sh
+You can also update only specific parts:
 
-# Update only the bar borders
-./edit-borders.sh -hex "#0aa4e5" -part bar
+```bash
+./edit-borders.sh -hex "#0aa4e5" -part bar -part notifications
+```
 
-# Update bar and notifications
-./edit-borders.sh -hex "#00ffff" -part bar -part notifications
+### Supported parts:
+```
+bar
+notifications
+overview
+sidebars
+cheatsheet
+```
+
+### What it updates:
+- SCSS borders in `~/.config/ags/scss/`
+- Hyprland plugin borders in `rules.conf`
+- (Hyprtrails color in `env.conf` (in correct `rgba(hexcodeff)` format) ) this part does not work yet
+
+AGS is automatically restarted so changes apply immediately.
