@@ -35,44 +35,5 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 ## 🛠️ Installation
 
 Copy the code snippets into the matching files, and use the border-editing script to change colours. (I will make an install script for this later)
-
+Check the border editing script to edit borders, etc.
 ---
-
-## 🔧 Border Editing Script
-
-A utility script is included: `edit-borders.sh`
-
-It allows you to update the colors of all border/glow styles across AGS, Hyprland, and Hyprtrails with one command.
-
-### Usage
-
-```bash
-./edit-borders.sh -hex "#ff00ff"
-```
-
-You can also update only specific parts:
-
-```bash
-./edit-borders.sh -hex "#0aa4e5" -part bar -part notifications
-```
-Opening the help menu
-
-```bash
-./edit-borders.sh --help
-```
-
-### Supported parts:
-```
-bar
-notifications
-overview
-sidebars
-cheatsheet
-```
-
-### What it updates:
-- SCSS borders in `~/.config/ags/scss/`
-- Hyprland plugin borders in `rules.conf`
-- (Hyprtrails color in `env.conf` (in correct `rgba(hexcodeff)` format) ) this part does not work yet
-
-AGS is automatically restarted so changes apply immediately.
