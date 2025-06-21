@@ -34,7 +34,8 @@ All styles are optimized for a minimal, clean, and modern Wayland environment wh
 
 ## 🛠️ Installation
 
-Copy the code snippets into the matching files, and use the border-editing script to change colours. (I will make an install script for this later)
-Check the border editing script in the app folder to edit borders, etc.
+- Copy the code snippets into the matching files, and use the border-editing script to change colours. (I will make an install script for this later)
+
+- Check the border editing script in the app folder to edit borders, etc.
 
 ---
