@@ -2,7 +2,7 @@
 
 # --- CONFIG ---
 SCSS_DIR="$HOME/.config/ags/scss"
-HYPR_RULES="$HOME/.config/hypr/custom/rules.conf"
+BPP_RULES="$HOME/.config/hypr/custom/env.conf"
 HYPRTRAILS_CONF="$HOME/.config/hypr/custom/rules.conf"
 DEFAULT_HEX="#00ffff"
 NEW_HEX=""
@@ -81,15 +81,15 @@ update_sidebars() { update_file "_sidebars.scss"; }
 update_cheatsheet() { update_file "_cheatsheet.scss"; }
 
 update_hyprland() {
-    if [[ -f "$HYPR_RULES" ]]; then
+    if [[ -f "$BPP_RULES" ]]; then
         echo "🛠️  Updating Hyprland plugin colors..."
         local RGB RGBA
         RGB=$(hex_to_rgb "$NEW_HEX")
         RGBA=$(hex_to_rgba "$NEW_HEX")
 
-        sed -i -E "s/(col\.border_1\s*=\s*rgb\().*?\)/\1$RGB)/" "$HYPR_RULES"
-        sed -i -E "s/(col\.border_2\s*=\s*rgb\().*?\)/\1$RGB)/" "$HYPR_RULES"
-        sed -i -E "s/(color\s*=\s*rgba\().*?\)/\1$RGBA)/" "$HYPR_RULES"
+        sed -i -E "s/(col\.border_1\s*=\s*rgb\().*?\)/\1$RGB)/" "$BPP_RULES"
+        sed -i -E "s/(col\.border_2\s*=\s*rgb\().*?\)/\1$RGB)/" "$BPP_RULES"
+        sed -i -E "s/(color\s*=\s*rgba\().*?\)/\1$RGBA)/" "$BPP_RULES"
     else
         echo "⚠️ Hyprland rules config not found!"
     fi
@@ -184,3 +184,4 @@ update_hyprland
 restart_ags
 
 echo "✅ Done! Borders, glows, and trails updated to $NEW_HEX"
+exit 0
