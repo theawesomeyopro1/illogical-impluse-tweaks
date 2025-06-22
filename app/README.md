@@ -25,7 +25,7 @@ Opening the help menu
 ### Supported parts:
 ```
 bar
-notifications
+notifications (broken at the moment)
 overview
 sidebars
 cheatsheet
