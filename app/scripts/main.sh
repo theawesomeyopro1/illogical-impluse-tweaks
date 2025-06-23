@@ -56,10 +56,10 @@ update_hyprtrails
 
 if [[ ${#PARTS_TO_UPDATE[@]} -eq 0 ]]; then
     update_bar
-    update_notifications
     update_overview
     update_sidebars
     update_cheatsheet
+    update_notifications
 else
     for part in "${PARTS_TO_UPDATE[@]}"; do
         case "$part" in
